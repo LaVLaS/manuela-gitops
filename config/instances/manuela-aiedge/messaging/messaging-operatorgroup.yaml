@@ -1,0 +1,10 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  generateName: manuela-aiedge-messaging-
+  generation: 1
+  name: manuela-aiedge-messaging
+  namespace: manuela-aiedge-messaging
+spec:
+  targetNamespaces:
+  - manuela-aiedge-messaging
