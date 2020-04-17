@@ -54,3 +54,10 @@ spec:
     importPolicy: {}
     referencePolicy:
       type: Local
+  - name: 0.2.0-10
+    from:
+      kind: DockerImage
+      name: quay.io/lavlas/iot-anomaly-detection:0.2.0-10
+    importPolicy: {}
+    referencePolicy:
+      type: Local
