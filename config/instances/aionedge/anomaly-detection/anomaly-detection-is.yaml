@@ -2,8 +2,8 @@ apiVersion: image.openshift.io/v1
 kind: ImageStream
 metadata:
   labels:
-    application: anomaly-detection
-  name: anomaly-detection
+    application: edge-anomaly-detection
+  name: edge-anomaly-detection
 spec:
   lookupPolicy:
     local: false

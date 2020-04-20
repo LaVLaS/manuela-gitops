@@ -5,6 +5,9 @@ resources:
 - aionedge-namespace.yaml
 - anomaly-detection-is.yaml
 
+bases:
+- ../../../templates/aionedge/anomaly-detection
+
 images:
-- name: anomaly-detection
+- name: edge-anomaly-detection
   newName: image-registry.openshift-image-registry.svc:5000/aionedge-anomaly-detection/edge-anomaly-detection
