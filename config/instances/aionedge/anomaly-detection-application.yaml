@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: aionedge-anomaly-detection
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/lavlas/manuela-gitops.git
+    targetRevision: aionedge
+    path: config/instances/aionedge/anomaly-detection
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: aionedge-anomaly-detection
+  syncPolicy:
+    automated: 
+      prune: true
+      selfHeal: true
+  ignoreDifferences:
+  - group: image.openshift.io
+    kind: ImageStream
+    jsonPointers:
+    - /spec/tags
