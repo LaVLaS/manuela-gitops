@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/lavlas/manuela-gitops.git
-    targetRevision: HEAD
+    targetRevision: master.summit
     path: deployment/execenv-ocp4
   destination:
     server: https://kubernetes.default.svc

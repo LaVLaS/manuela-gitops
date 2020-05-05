@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/lavlas/manuela-gitops.git
-    targetRevision: HEAD
+    targetRevision: master.summit
     path: config/instances/manuela-stormshift/messaging
   destination:
     server: https://kubernetes.default.svc
