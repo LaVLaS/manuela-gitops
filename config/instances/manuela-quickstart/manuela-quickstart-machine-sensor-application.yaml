@@ -8,8 +8,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/sa-mw-dach/manuela-gitops.git
-    targetRevision: master
+    repoURL: https://github.com/lavlas/manuela-gitops.git
+    targetRevision: manuela-demo
     path: config/instances/manuela-quickstart/machine-sensor
   destination:
     server: https://kubernetes.default.svc
