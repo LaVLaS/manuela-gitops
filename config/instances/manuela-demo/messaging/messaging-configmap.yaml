@@ -4,7 +4,7 @@ metadata:
   name: messaging-configmap
 data:
 
-  ANOMALY_DETECTION_URL: 'https://anomaly-detection-manuela-demo-odh.apps.ocp3.stormshift.coe.muc.redhat.com'
+  ANOMALY_DETECTION_URL: 'https://anomaly-detection-manuela-demo-odh.OCP_WILDCARD_DOMAIN'
   VIBRATION_ALERT_ENABLED: 'true'
   VIBRATION_ANOMALY_ENABLED: 'false'
   NODE_TLS_REJECT_UNAUTHORIZED: '0'
