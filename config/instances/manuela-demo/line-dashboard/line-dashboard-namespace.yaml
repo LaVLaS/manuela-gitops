@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: manuela-stormshift-line-dashboard
+  name: manuela-demo-line-dashboard

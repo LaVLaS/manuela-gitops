@@ -1,19 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: manuela-stormshift-line-dashboard
+  name: manuela-demo-line-dashboard
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/sa-mw-dach/manuela-gitops.git
+    repoURL: https://github.com/lavlas/manuela-gitops.git
     targetRevision: HEAD
-    path: config/instances/manuela-stormshift/line-dashboard
+    path: config/instances/manuela-demo/line-dashboard
   destination:
     server: https://kubernetes.default.svc
-    namespace: manuela-stormshift-line-dashboard
+    namespace: manuela-demo-line-dashboard
   syncPolicy:
     automated: 
       prune: true

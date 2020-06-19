@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: manuela-stormshift-machine-sensor
+  name: manuela-demo-machine-sensor

@@ -1,19 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: manuela-stormshift-machine-sensor
+  name: manuela-demo-machine-sensor
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/sa-mw-dach/manuela-gitops.git
+    repoURL: https://github.com/lavlas/manuela-gitops.git
     targetRevision: HEAD
-    path: config/instances/manuela-stormshift/machine-sensor
+    path: config/instances/manuela-demo/machine-sensor
   destination:
     server: https://kubernetes.default.svc
-    namespace: manuela-stormshift-machine-sensor
+    namespace: manuela-demo-machine-sensor
   syncPolicy:
     automated: 
       prune: true
