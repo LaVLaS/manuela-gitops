@@ -1,0 +1,10 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  generateName: manuela-demo-argocd-aggregator-
+  generation: 1
+  name: manuela-demo-argocd-aggregator
+  namespace: manuela-demo-argocd-aggregator
+spec:
+  targetNamespaces:
+  - manuela-demo-argocd-aggregator

@@ -1,0 +1,6 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: pushprox-proxy
+spec:
+  host: pushprox-proxy-manuela-demo-argocd-aggregator.OCP_WILDCARD_DOMAIN
