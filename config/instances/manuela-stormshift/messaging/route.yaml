@@ -3,4 +3,4 @@ kind: Route
 metadata:
   name: messaging
 spec:
-  host: messaging-manuela-stormshift-messaging.apps.llasmith.dev.datahub.redhat.com
+  host: messaging-manuela-stormshift-messaging.apps.cluster-raleigh-7704.raleigh-7704.sandbox1269.opentlc.com

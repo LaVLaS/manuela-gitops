@@ -1,5 +1,5 @@
 {
-    "websocketHost": "http://messaging-manuela-stormshift-messaging.apps.llasmith.dev.datahub.redhat.com",
+    "websocketHost": "http://messaging-manuela-stormshift-messaging.apps.cluster-raleigh-7704.raleigh-7704.sandbox1269.opentlc.com",
     "websocketPath": "/api/service-web/socket",
     "SERVER_TIMEOUT": 20000
 }
