@@ -18,7 +18,7 @@ configMapGenerator:
 
 bases:
 - ../../../templates/manuela-team-rolebindings
-#- github.com/sa-mw-dach/manuela-gitops/config/templates/manuela/messaging
+#- github.com/lavlas/manuela-gitops/config/templates/manuela/messaging
 - ../../../templates/manuela-openshift-prod/messaging
 - ../../../templates/manuela-openshift-prod/messaging-kafka
 - ../../../templates/installplan-approver
